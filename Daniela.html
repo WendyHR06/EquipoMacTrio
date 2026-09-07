@@ -1,11 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mente, Conciencia y Sueños</title>
+
+    <style>
+        /* CONFIGURACIÓN GENERAL Y PALETA OSCURA */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #0b0f19; /* Fondo oscuro azul noche */
+            color: #e2e8f0;
+            padding: 20px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        /* ENCABEZADO Y BOTÓN DE REGRESAR */
+        header {
+            background: linear-gradient(135deg, #1e1b4b, #4338ca);
+            padding: 25px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(67, 56, 202, 0.4);
+            margin-bottom: 30px;
+            border: 1px solid #6366f1;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.12);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #c084fc;
+            color: #0b0f19;
+        }
+
+        /* BOTÓN REGRESAR DESTACADO */
+        .btn-regresar {
+            background-color: #f43f5e !important;
+            box-shadow: 0 4px 12px rgba(244, 63, 94, 0.4);
+        }
+
+        .btn-regresar:hover {
+            background-color: #e11d48 !important;
+            color: #ffffff !important;
+            transform: scale(1.05);
+        }
+
+        /* SECCIONES Y TARJETAS */
+        section, aside {
+            background-color: #161e2e; /* Contenedor azul profundo */
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            border: 1px solid #1f293d;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 8px;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: #c084fc;
+            margin: 15px 0 10px 0;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: #cbd5e1;
+        }
+
+        /* IMÁGENES */
+        .imagen-seccion {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 15px 0;
+            border: 2px solid #818cf8;
+            box-shadow: 0 0 12px rgba(129, 140, 248, 0.3);
+        }
+
+        /* LISTAS Y TARJETAS INTERNAS */
+        ul {
+            list-style: none;
+        }
+
+        li {
+            background-color: #1e293b;
+            padding: 14px 18px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            border-left: 4px solid #c084fc;
+        }
+
+        /* TABLA MANTENIENDO TONOS OSCUROS */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: #1e293b;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+        }
+
+        th {
+            background-color: #4338ca;
+            color: #ffffff;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+    </style>
 </head>
 <body>
-    chunkis 
+
+    <header>
+        <h1>Mente, Conciencia y Sueños</h1>
+        <nav>
+            <a href="index.html" class="btn-regresar">⬅ Regresar</a>
+            <a href="#mente">La Mente</a>
+            <a href="#conciencia">La Conciencia</a>
+            <a href="#suenos">Los Sueños</a>
+            <a href="#fuentes">Fuentes</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SECCIÓN 1: LA MENTE -->
+        <section id="mente">
+            <h2>El Misterio de la Mente Humana</h2>
+            <p>
+                La mente abarca los procesos cognitivos del cerebro: pensamientos, percepciones, memoria y emociones. A través de más de 80 mil millones de neuronas interconectadas, el cerebro procesa información del entorno y coordina respuestas inmediatas.
+            </p>
+
+            <!-- Tu imagen de la cabeza lateral con red neuronal -->
+            <img src="1000183888.jpg" alt="Red de conexiones neuronales en la cabeza humana" class="imagen-seccion">
+
+            <p>
+                Las neuronas transmiten información mediante señales eléctricas y neurotransmisores en las <em>sinapsis</em>. Estructuras como la corteza prefrontal modulan el razonamiento y la toma de decisiones.
+            </p>
+        </section>
+
+        <!-- SECCIÓN 2: LA CONCIENCIA -->
+        <section id="conciencia">
+            <h2>¿Qué es la Conciencia?</h2>
+            <p>
+                La conciencia es la capacidad de percibir nuestra propia existencia y el mundo que nos rodea. Es uno de los grandes enigmas de la neurociencia moderna:
+            </p>
+
+            <!-- Tu imagen de la cabeza frontal con destello central -->
+            <img src="1000183889.jpg" alt="Representación conceptual de la conciencia humana" class="imagen-seccion">
+
+            <ul>
+                <li><strong>Experiencia Subjetiva:</strong> Nos permite experimentar sensaciones, pensamientos y emociones de forma personal e individual.</li>
+                <li><strong>Procesamiento Integrado:</strong> La conciencia no reside en un solo punto, sino en la interacción coordinada de múltiples regiones cerebrales.</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN 3: LOS SUEÑOS -->
+        <section id="suenos">
+            <h2>El Mundo de los Sueños</h2>
+            <p>
+                Los sueños son experiencias mentales llenas de imágenes, emociones y pensamientos que ocurren mientras dormimos. Se producen en diferentes etapas del sueño:
+            </p>
+
+            <!-- Imagen representativa sobre el descanso y los sueños -->
+            <img src="https://images.unsplash.com/photo-1511295742362-92c96b124e52?auto=format&fit=crop&w=800&q=80" alt="Concepto visual de sueños y estado de descanso" class="imagen-seccion">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fase del Sueño</th>
+                        <th>Función y Características</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sueño REM</td>
+                        <td>Alta actividad cerebral, movimientos oculares rápidos y sueños más vívidos.</td>
+                    </tr>
+                    <tr>
+                        <td>Sueño No REM</td>
+                        <td>Fase de descanso físico, reparación celular y consolidación de la memoria.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECCIÓN 4: FUENTES OFICIALES -->
+        <aside id="fuentes">
+            <h2>Fuentes de Información Consultadas</h2>
+            <p>Información científica respaldada por instituciones oficiales de salud e investigación:</p>
+            <ul>
+                <li><strong>NINDS:</strong> National Institute of Neurological Disorders and Stroke – <em>Brain Basics</em>.</li>
+                <li><strong>NICHD:</strong> National Institute of Child Health and Human Development – <em>Investigación del Sueño</em>.</li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Práctica Web Compartida &bull; Programación de Aplicaciones Web &bull; 2026</p>
+    </footer>
+
 </body>
 </html>
