@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mente, Conciencia y Sueños</title>
+    <title>La Mente, Conciencia y los Sueños</title>
 
     <style>
-        /* CONFIGURACIÓN GENERAL Y PALETA OSCURA */
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #0b0f19; /* Fondo oscuro azul noche */
-            color: #e2e8f0;
-            padding: 20px;
-            max-width: 950px;
+            line-height: 1.7;
+            background: radial-gradient(circle at top, #0d1b2a 0%, #080d1a 50%, #03050b 100%);
+            background-attachment: fixed;
+            color: #e0f2fe;
+            padding: 25px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
-        /* ENCABEZADO Y BOTÓN DE REGRESAR */
+        /* ENCABEZADO CON GRADIENTE NEÓN */
         header {
-            background: linear-gradient(135deg, #1e1b4b, #4338ca);
-            padding: 25px;
-            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.2), rgba(139, 92, 246, 0.2));
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
             text-align: center;
-            box-shadow: 0 8px 20px rgba(67, 56, 202, 0.4);
-            margin-bottom: 30px;
-            border: 1px solid #6366f1;
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
+            margin-bottom: 35px;
         }
 
         header h1 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             color: #ffffff;
-            margin-bottom: 15px;
-            text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+            margin-bottom: 18px;
+            text-shadow: 0 0 15px rgba(56, 189, 248, 0.8), 0 0 30px rgba(168, 85, 247, 0.5);
         }
 
         nav {
@@ -51,110 +54,127 @@
         nav a {
             color: #ffffff;
             text-decoration: none;
-            background-color: rgba(255, 255, 255, 0.12);
-            padding: 8px 18px;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.95rem;
             font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
         }
 
         nav a:hover {
-            background-color: #c084fc;
-            color: #0b0f19;
+            background: linear-gradient(135deg, #38bdf8, #818cf8);
+            color: #03050b;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+            transform: translateY(-2px);
         }
 
         /* BOTÓN REGRESAR DESTACADO */
         .btn-regresar {
-            background-color: #f43f5e !important;
-            box-shadow: 0 4px 12px rgba(244, 63, 94, 0.4);
+            background: linear-gradient(135deg, #ff416c, #ff4b2b) !important;
+            border: none !important;
+            box-shadow: 0 0 15px rgba(255, 65, 108, 0.5);
         }
 
         .btn-regresar:hover {
-            background-color: #e11d48 !important;
+            background: linear-gradient(135deg, #ff4b2b, #ff416c) !important;
             color: #ffffff !important;
-            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 65, 108, 0.8);
         }
 
-        /* SECCIONES Y TARJETAS */
+        /* CONTENEDORES CON DEGRADADOS SUAVES Y BORDES ILUMINADOS */
         section, aside {
-            background-color: #161e2e; /* Contenedor azul profundo */
-            padding: 25px;
-            border-radius: 14px;
-            margin-bottom: 25px;
-            border: 1px solid #1f293d;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.6));
+            backdrop-filter: blur(12px);
+            padding: 30px;
+            border-radius: 18px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(129, 140, 248, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
         }
 
         h2 {
             color: #38bdf8;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #334155;
-            padding-bottom: 8px;
-            font-size: 1.5rem;
-        }
-
-        h3 {
-            color: #c084fc;
-            margin: 15px 0 10px 0;
+            margin-bottom: 18px;
+            border-bottom: 2px solid rgba(56, 189, 248, 0.3);
+            padding-bottom: 10px;
+            font-size: 1.7rem;
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
         }
 
         p {
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             color: #cbd5e1;
+            font-size: 1.05rem;
         }
 
-        /* IMÁGENES */
+        /* IMÁGENES PEQUEÑAS CON EFECTO GLOW */
         .imagen-seccion {
             width: 100%;
-            max-height: 320px;
+            max-height: 220px;
             object-fit: cover;
-            border-radius: 12px;
+            border-radius: 14px;
             margin: 15px 0;
-            border: 2px solid #818cf8;
-            box-shadow: 0 0 12px rgba(129, 140, 248, 0.3);
+            border: 2px solid rgba(56, 189, 248, 0.6);
+            box-shadow: 0 0 18px rgba(56, 189, 248, 0.3);
         }
 
-        /* LISTAS Y TARJETAS INTERNAS */
+        /* TARJETAS CON GLOW LATERAL */
         ul {
             list-style: none;
         }
 
         li {
-            background-color: #1e293b;
-            padding: 14px 18px;
-            border-radius: 10px;
-            margin-bottom: 12px;
-            border-left: 4px solid #c084fc;
+            background: linear-gradient(90deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.7));
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            border-left: 5px solid #c084fc;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
-        /* TABLA MANTENIENDO TONOS OSCUROS */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            background-color: #1e293b;
-            border-radius: 8px;
-            overflow: hidden;
+        /* DESTACADOS CON BORDES DIFUMINADOS */
+        .caja-destacada {
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px solid rgba(168, 85, 247, 0.4);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
         }
 
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #334155;
+        /* SECCIÓN INFERIOR PARA VOLVER */
+        .seccion-regresar {
+            text-align: center;
+            padding: 30px;
+            background: transparent;
+            border: none;
+            box-shadow: none;
         }
 
-        th {
-            background-color: #4338ca;
+        .btn-regresar-grande {
+            display: inline-block;
+            text-decoration: none;
             color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 15px 35px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            box-shadow: 0 0 20px rgba(255, 65, 108, 0.6);
+            transition: all 0.3s ease;
         }
 
-        /* PIE DE PÁGINA */
+        .btn-regresar-grande:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 30px rgba(255, 65, 108, 0.9);
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             color: #64748b;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -167,87 +187,89 @@
             <a href="#mente">La Mente</a>
             <a href="#conciencia">La Conciencia</a>
             <a href="#suenos">Los Sueños</a>
-            <a href="#fuentes">Fuentes</a>
+            <a href="#curiosidades">Datos Curiosos</a>
         </nav>
     </header>
 
     <main>
 
-        <!-- SECCIÓN 1: LA MENTE -->
+        <!-- SECCIÓN 1: LA MENTE HUMANA -->
         <section id="mente">
-            <h2>El Misterio de la Mente Humana</h2>
+            <h2>El Universo de la Mente Humana</h2>
             <p>
-                La mente abarca los procesos cognitivos del cerebro: pensamientos, percepciones, memoria y emociones. A través de más de 80 mil millones de neuronas interconectadas, el cerebro procesa información del entorno y coordina respuestas inmediatas.
+                La mente humana es el conjunto de facultades cognitivas que abarcan procesos como la percepción, el pensamiento, la memoria, la imaginación y la voluntad, siendo el resultado del funcionamiento coordinado de más de 80 mil millones de neuronas interconectadas en una red muy compleja.
             </p>
 
-            <!-- Tu imagen de la cabeza lateral con red neuronal -->
-            <img src="1000183888.jpg" alt="Red de conexiones neuronales en la cabeza humana" class="imagen-seccion">
+            <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1000&q=80" alt="Conexiones neuronales e impulsos eléctricos de la mente" class="imagen-seccion">
 
             <p>
-                Las neuronas transmiten información mediante señales eléctricas y neurotransmisores en las <em>sinapsis</em>. Estructuras como la corteza prefrontal modulan el razonamiento y la toma de decisiones.
+                Cada pensamiento o recuerdo genera un impulso eléctrico que viaja a velocidades de hasta 400 km/h a través de pequeñas uniones conocidas como <em>sinapsis</em>, donde las neuronas utilizan sustancias químicas llamadas neurotransmisores para enviar mensajes entre sí, permitiendo desde un parpadeo hasta el razonamiento matemático abstracto.
             </p>
+
+            <div class="caja-destacada">
+                <p> <strong>Consumo de energía:</strong> Aunque el cerebro representa aproximadamente el 2 % de nuestro peso corporal total, consume cerca del 20 % de la energía y el oxígeno que el cuerpo necesita cuando estamos en reposo.</p>
+            </div>
         </section>
 
         <!-- SECCIÓN 2: LA CONCIENCIA -->
         <section id="conciencia">
-            <h2>¿Qué es la Conciencia?</h2>
+            <h2>El Enigma de la Conciencia</h2>
             <p>
-                La conciencia es la capacidad de percibir nuestra propia existencia y el mundo que nos rodea. Es uno de los grandes enigmas de la neurociencia moderna:
+                La conciencia es la capacidad que nos permite darnos cuenta de nosotros mismos, de nuestros pensamientos y de lo que ocurre a nuestro alrededor, dándonos la experiencia subjetiva del ser como sentir el calor del sol, reconocer el sabor de la comida o experimentar alegría y tristeza.
             </p>
 
-            <!-- Tu imagen de la cabeza frontal con destello central -->
-            <img src="1000183889.jpg" alt="Representación conceptual de la conciencia humana" class="imagen-seccion">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=80" alt="Representación de la conciencia y la luz interior del pensamiento" class="imagen-seccion">
+
+            <p>
+                A diferencia de una computadora que procesa datos de manera automática sin sentir nada, la mente humana tiene experiencias internas únicas que los científicos llaman <em>qualios</em>.
+            </p>
 
             <ul>
-                <li><strong>Experiencia Subjetiva:</strong> Nos permite experimentar sensaciones, pensamientos y emociones de forma personal e individual.</li>
-                <li><strong>Procesamiento Integrado:</strong> La conciencia no reside en un solo punto, sino en la interacción coordinada de múltiples regiones cerebrales.</li>
+                <li><strong>El problema difícil de la conciencia:</strong> La neurociencia puede identificar qué áreas del cerebro se iluminan cuando sentimos dolor o vemos un color, pero aún no se explica cómo la materia física genera una sensación consciente interior.</li>
+                <li><strong>Neuroplasticidad:</strong> La conciencia y la mente pueden reconfigurarse a sí mismas, logrando que a través del aprendizaje y la meditación el cerebro modifique físicamente la estructura de sus conexiones.</li>
+                <li><strong>Procesamiento en red:</strong> La conciencia no está ubicada en una sola región, sino que emerge de la interacción constante entre la corteza prefrontal, el tálamo y el sistema límbico.</li>
             </ul>
         </section>
 
         <!-- SECCIÓN 3: LOS SUEÑOS -->
         <section id="suenos">
-            <h2>El Mundo de los Sueños</h2>
+            <h2>El Arte y la Ciencia de Soñar</h2>
             <p>
-                Los sueños son experiencias mentales llenas de imágenes, emociones y pensamientos que ocurren mientras dormimos. Se producen en diferentes etapas del sueño:
+                Cuando te quedas dormido tu cuerpo descansa pero tu mente no se apaga, entrando en un modo especial donde proyecta películas internas llenas de emociones, imágenes e historias sin lógica real.
             </p>
 
-            <!-- Imagen representativa sobre el descanso y los sueños -->
-            <img src="https://images.unsplash.com/photo-1511295742362-92c96b124e52?auto=format&fit=crop&w=800&q=80" alt="Concepto visual de sueños y estado de descanso" class="imagen-seccion">
+            <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1000&q=80" alt="Visualización de los sueños y la actividad mental nocturna" class="imagen-seccion">
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Fase del Sueño</th>
-                        <th>Función y Características</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Sueño REM</td>
-                        <td>Alta actividad cerebral, movimientos oculares rápidos y sueños más vívidos.</td>
-                    </tr>
-                    <tr>
-                        <td>Sueño No REM</td>
-                        <td>Fase de descanso físico, reparación celular y consolidación de la memoria.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p>
+                Soñar no es un simple entretenimiento, sino la forma en que la mente procesa todo lo que te ocurrió en el día para mantener tu cerebro sano.
+            </p>
+
+            <ul>
+                <li><strong>Organiza la memoria:</strong> Tu cerebro decide qué recuerdos del día vale la pena guardar y cuáles puede borrar para ahorrar espacio.</li>
+                <li><strong>Entrena tus emociones:</strong> Muchas veces los sueños simulan situaciones difíciles o miedos para ayudarte a superar el estrés de la vida real.</li>
+                <li><strong>Impulsa la creatividad:</strong> Al no tener las reglas del mundo despierto, la mente conecta ideas locas que pueden transformarse en grandes soluciones o creaciones artísticas.</li>
+            </ul>
         </section>
 
-        <!-- SECCIÓN 4: FUENTES OFICIALES -->
-        <aside id="fuentes">
-            <h2>Fuentes de Información Consultadas</h2>
-            <p>Información científica respaldada por instituciones oficiales de salud e investigación:</p>
+        
+        <aside id="curiosidades">
+            <h2>Datos Curiosos sobre los Sueños</h2>
             <ul>
-                <li><strong>NINDS:</strong> National Institute of Neurological Disorders and Stroke – <em>Brain Basics</em>.</li>
-                <li><strong>NICHD:</strong> National Institute of Child Health and Human Development – <em>Investigación del Sueño</em>.</li>
+                <li><strong>Olvidamos casi todo:</strong> A los 5 minutos de despertar ya olvidaste el 50% de tu sueño, y a los 10 minutos se te fue más del 90%.</li>
+                <li><strong>Sueños Lúcidos:</strong> Es un fenómeno en el cual una persona se da cuenta de que está soñando dentro del propio sueño, pudiendo llegar a controlar el entorno, sus acciones o volar.</li>
+                <li><strong>Rostros conocidos:</strong> El cerebro no puede inventar caras totalmente nuevas en los sueños, por lo que todas las personas que aparecen son rostros que has visto en la vida real.</li>
             </ul>
         </aside>
+
+       
+        <div class="seccion-regresar">
+            <a href="index.html" class="btn-regresar-grande">⬅ Regresar al Menú Principal</a>
+        </div>
 
     </main>
 
     <footer>
-        <p>Práctica Web Compartida &bull; Programación de Aplicaciones Web &bull; 2026</p>
+        <p>Proyecto  &bull; Programación Web &bull; 2026</p>
     </footer>
 
 </body>
